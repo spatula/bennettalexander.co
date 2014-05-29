@@ -1,0 +1,78 @@
+* { box-sizing: border-box; }
+html { height: 100% }
+body {
+  background-image: url('/assets/images/bennett_down.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 50%;
+  background-size: cover;
+
+  color: white;
+  font-family: proxima-nova;
+  margin: 0;
+  text-align: center;
+}
+
+h1 {
+  font: italic 400 80px "Playfair Display";
+  text-shadow: 2px 2px 0 #415E77;
+}
+
+h1 small {
+  display: block;
+  font: 600 30px proxima-nova;
+  letter-spacing: 10px;
+  text-transform: uppercase;
+}
+
+.stats {
+  background: rgba(255, 255, 255, 0.8);
+  border-radius: 20px;
+  display: inline-block;
+  font-size: 14px;
+  margin: 0;
+  padding: 10px 20px;
+}
+
+.stat { display: inline-block; }
+
+.stat-name, .stat-value {
+  color: #819Eb7;
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+}
+
+.stat-name {
+  color: #415E77;
+  font-weight: 600;
+  font-size: 13px;
+  text-transform: uppercase;
+}
+
+.stat + .stat {
+  margin-left: 0.5em;
+}
+
+
+@media screen and (max-width: 600px) {
+  h1 {
+    font-size: 35px;
+    padding: 0 10px;
+    text-shadow: 1px 1px 0 black;
+  }
+
+  h1 small {
+    font-size: 14px;
+    letter-spacing: 3px;
+  }
+
+  .stats {
+    border-radius: 0;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+  }
+
+}
